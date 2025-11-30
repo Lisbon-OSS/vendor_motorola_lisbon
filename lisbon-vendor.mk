@@ -1445,7 +1445,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     android.hardware.usb@1.2-service-mediatekv2.xml \
     fdrcontrol_1.2_manifest.xml \
-    gnss-default.xml \
+    gnss-mtk-default.xml \
     gnss@2.1-service.xml \
     lbs_hidl_service@1.0.xml \
     lights-mtk-default.xml \

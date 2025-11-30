@@ -101,9 +101,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "gnss-default.xml",
+	name: "gnss-mtk-default.xml",
 	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/gnss-default.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/gnss-mtk-default.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
