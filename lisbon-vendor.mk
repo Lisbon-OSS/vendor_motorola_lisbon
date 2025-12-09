@@ -762,7 +762,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/lisbon/proprietary/vendor/lib/libmtkhardware_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkhardware_legacy.so \
     vendor/motorola/lisbon/proprietary/vendor/lib/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtklimiter_vendor.so \
     vendor/motorola/lisbon/proprietary/vendor/lib/libmtknetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtknetutils.so \
-    vendor/motorola/lisbon/proprietary/vendor/lib/libmtkperf_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkperf_client_vendor.so \
     vendor/motorola/lisbon/proprietary/vendor/lib/libmtkproperty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkproperty.so \
     vendor/motorola/lisbon/proprietary/vendor/lib/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkrillog.so \
     vendor/motorola/lisbon/proprietary/vendor/lib/libmtkshifter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkshifter_vendor.so \
@@ -1317,7 +1316,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/lisbon/proprietary/vendor/lib64/libvpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpu.so \
     vendor/motorola/lisbon/proprietary/vendor/lib64/libvpu5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpu5.so \
     vendor/motorola/lisbon/proprietary/vendor/lib64/libwapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwapi.so \
-    vendor/motorola/lisbon/proprietary/vendor/lib64/libwifi-hal-mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal-mtk.so \
     vendor/motorola/lisbon/proprietary/vendor/lib64/libwifitest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifitest.so \
     vendor/motorola/lisbon/proprietary/vendor/lib64/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwo.so \
     vendor/motorola/lisbon/proprietary/vendor/lib64/libwpfa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpfa.so \
@@ -1410,6 +1408,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/lisbon/proprietary/vendor/lib64/vendor.trustonic.tee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.trustonic.tee@1.1.so
 
 PRODUCT_PACKAGES += \
+    libwifi-hal-mtk \
     ImsService \
     mediatek-common \
     mediatek-framework \
@@ -1420,36 +1419,14 @@ PRODUCT_PACKAGES += \
     mtk-moto-telephony-ext \
     mtk-telephony-common \
     com.fingerprints.extension \
-    android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
-    android.hardware.usb@1.2-service-mediatekv2.xml \
-    fdrcontrol_1.2_manifest.xml \
-    gnss-mtk-default.xml \
-    gnss@2.1-service.xml \
-    lbs_hidl_service@1.0.xml \
-    lights-mtk-default.xml \
-    manifest_android.hardware.drm@1.4-service.widevine.xml \
-    manifest_hwcomposer.xml \
-    manifest_media_c2_V1_2_default.xml \
-    motorola.hardware.input@1.0-service.xml \
-    power-mtk-default.xml
-
-PRODUCT_PACKAGES += \
-    libGLES_mali_vulkan.mt6785_symlink32 \
-    kmsetkey.trustonic_kmsetkey.default_symlink32 \
-    libMcGatekeeper_gatekeeper.trustonic_symlink32 \
-    libSoftGatekeeper_gatekeeper.default_symlink32 \
-    libdpframework_libdpframework_symlink32 \
-    libmtk_drvb_libmtk_drvb_symlink32 \
-    libnir_neon_driver_libnir_neon_driver_symlink32 \
-    libpq_prot_libpq_prot_symlink32 \
-    libGLES_mali_vulkan.mt6785_symlink64 \
-    kmsetkey.trustonic_kmsetkey.default_symlink64 \
-    libMcGatekeeper_gatekeeper.trustonic_symlink64 \
-    libSoftGatekeeper_gatekeeper.default_symlink64 \
-    libdpframework_libdpframework_symlink64 \
-    libmcv_runtime.mtk_libmcv_runtime.mtk_symlink64 \
-    libmtk_drvb_libmtk_drvb_symlink64 \
-    libneuron_runtime.5_libneuron_runtime.5_symlink64 \
-    libneuron_runtime_libneuron_runtime_symlink64 \
-    libnir_neon_driver_libnir_neon_driver_symlink64 \
-    libpq_prot_libpq_prot_symlink64
+    android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu \
+    android.hardware.usb@1.2-service-mediatekv2 \
+    fdrcontrol_1.2_manifest \
+    gnss-mtk-default \
+    gnss@2.1-service \
+    lbs_hidl_service@1.0 \
+    lights-mtk-default \
+    manifest_android.hardware.drm@1.4-service.widevine \
+    manifest_hwcomposer \
+    manifest_media_c2_V1_2_default \
+    motorola.hardware.input@1.0-service
